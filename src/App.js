@@ -7,12 +7,14 @@ import ProductPage from "./pages/ProductPage";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import CategoryPage from "./pages/CategoryPage";
+import { Toaster } from "react-hot-toast";
 export default function App() {
   return (
     <div>
       {/* Define Routes  */}
 
       <Header/>
+      <Toaster/>
 
       <Routes>
         <Route path="/" element={<HomePage />} />
